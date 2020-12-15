@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+* {
+    margin: 0; padding: 0;
+}
+
+html,body,#root,.main-wrap,.container-wrap{
+    height: 100%;
+}
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+}
+.container-wrap {
+    display: none;
+}
+.start-view {
+    width: 100%; height: 100%; overflow: hidden;
+}
+.main-view {
+    background-image: url("./img/leaf.jpg"); height: 100%;
+}
+#startVideo {
+    overflow: hidden; object-fit: cover; right: 0; bottom: 0; background-size: cover; z-index: 0;
+    min-width: 100%; height: auto;
+}
+.start-logo {
+    position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;
+}
+.start-logo h1 {
+    font-family: 'Courgette', cursive; font-size: 40px;
+}
+#logo {
+    width: 100px; height: 100px; margin: 5px 0px;
+}
+.left-nav{
+    position: fixed; right: 20px; top:50%; transform: translate(0, -50%);
+}
+.left-nav ul {
+    list-style: none;
+}
+.left-nav ul li {
+    margin: 18px 0px; width: 14px; height: 14px;
+}
+.left-nav ul li a {
+    display: block; width: 100%; height: 100%; border-radius: 14px; box-sizing: border-box; background: #555555; border: none !important;
+}
+.left-nav ul li a span {display: none}
